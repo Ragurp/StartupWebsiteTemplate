@@ -1,0 +1,268 @@
+/* https://themewagon.github.io/startup2/contact.html */
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(9, 30, 62, .7);
+    /* align-self: center; */
+}
+
+
+.text-primary1 {
+    color: rgb(6, 163, 218) !important;
+    font-weight: 900;
+}
+
+.fa-bars {
+    color: rgb(6, 163, 218) !important;
+}
+
+.content {
+    max-width: 900px;
+    padding: 0 25px;
+}
+
+.contant {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bolder;
+    color: rgb(50, 50, 50);
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.active {
+    color: rgb(6, 163, 218) !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(6, 163, 218) !important;
+}
+
+.navbar button {
+    border: 1px solid rgb(6, 163, 218) !important;
+}
+
+.navbar button:focus {
+    outline: 5px solid rgb(6, 163, 218) !important;
+}
+
+.active1 {
+    background-color: rgb(6, 163, 218) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 1px;
+
+}
+
+.carobtn {
+    border-radius: 1px;
+}
+
+.line {
+    position: relative;
+    width: 140px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: rgb(6, 163, 218);
+}
+
+.box {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    0% {
+        left: 0px
+    }
+
+    /* 25%  {background-color: yellow;}
+  50%  {background-color: blue;} */
+    100% {
+        left: 130px
+    }
+}
+
+.button2 {
+    color: white;
+    background-color: rgb(6, 163, 218);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 15px;
+}
+
+.button1 {
+    color: white;
+    background-color: rgb(6, 163, 218);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    border-radius: 1px;
+}
+
+.button1:hover {
+    color: black;
+    transition: 1s;
+}
+
+.outer-box {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 249, 255);
+    padding: 20px;
+    position: relative;
+
+}
+
+.box2 {
+    transform: rotate(45deg);
+}
+
+.box2 i {
+    transform: rotate(-45deg);
+}
+
+.inner-box {
+    position: absolute;
+    z-index: 1;
+    bottom: -14%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+
+.outer-box:hover .inner-box {
+    display: block;
+    animation-name: example1;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes example1 {
+    0% {
+        bottom: -23%;
+    }
+
+    100% {
+        bottom: -14%;
+    }
+}
+
+.bg-primary1 {
+    background-color: rgb(238, 249, 255);
+}
+
+.card {
+    border: none;
+}
+
+.box-center {
+    z-index: 1;
+    box-shadow: 0.5px 0.5px 8px 0px rgba(6, 6, 6, 0.3);
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    border-radius: 0px !important;
+    border: none !important;
+    background-color: rgb(238, 249, 255) !important;
+}
+
+.bg-primary2 {
+    color: white;
+    background-color: rgb(6, 163, 218);
+    ;
+}
+
+span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 700;
+}
+
+h1,
+.h5 {
+    font-weight: 900 !important;
+}
+
+small {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 22px;
+}
+
+@media screen and (min-width: 750px) {
+    .caro {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .card1 {
+        position: absolute !important;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .content small {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5 !important;
+    }
+
+    .content h1 {
+        font-size: 74px;
+        font-weight: 900;
+    }
+
+    .carobtn {
+        padding: 18px 56px;
+        border-radius: 1px;
+    }
+
+    .navbar {
+        position: sticky;
+        top: -3px;
+        z-index: 10;
+    }
+}
