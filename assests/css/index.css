@@ -1,5 +1,3 @@
-/* https://themewagon.github.io/startup2/contact.html */
-
 body {
     font-family: 'Nunito', sans-serif !important;
 }
@@ -15,7 +13,6 @@ body {
     bottom: 0%;
     right: 0%;
     background-color: rgba(9, 30, 62, .7);
-    /* align-self: center; */
 }
 
 
@@ -34,7 +31,7 @@ body {
 }
 
 .contant {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
@@ -51,6 +48,10 @@ body {
 
 .navbar-nav .nav-item .nav-link:hover {
     color: rgb(6, 163, 218) !important;
+}
+
+.navbar {
+    border-bottom: 1px solid;
 }
 
 .navbar button {
@@ -81,7 +82,7 @@ body {
     background-color: rgb(6, 163, 218);
 }
 
-.box {
+.line .box {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -97,10 +98,42 @@ body {
         left: 0px
     }
 
-    /* 25%  {background-color: yellow;}
-  50%  {background-color: blue;} */
     100% {
         left: 130px
+    }
+}
+
+.sl {
+    width: 90px;
+    height: 4px;
+    position: relative;
+    border-radius: 2px;
+    background-color: rgb(6, 163, 218);
+}
+
+.sl .box {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    animation-name: example3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes example3 {
+    0% {
+        left: 0%
+    }
+
+    100% {
+        left: 95%
     }
 }
 
@@ -109,7 +142,7 @@ body {
     background-color: rgb(6, 163, 218);
     border: none;
     outline: none;
-    border-radius: 3px;
+    border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,6 +213,13 @@ body {
         bottom: -14%;
     }
 }
+.link-animated a{
+    padding-left: auto;
+    transition: padding-left 0.5s;
+}
+.link-animated a:hover{
+    padding-left: 10px;
+}
 
 .bg-primary1 {
     background-color: rgb(238, 249, 255);
@@ -231,6 +271,59 @@ small {
     font-size: 22px;
 }
 
+img {
+    transition: transform 1s;
+}
+
+.team:hover img,
+.blog:hover img {
+    transform: scale(1.2);
+}
+
+.team:hover,
+.blog:hover {
+    box-shadow: 1px 1px 15px 0px rgb(50, 50, 50);
+}
+
+.team .img,
+.blog .img {
+    position: relative;
+}
+
+.web a {
+    position: absolute;
+    top: 40px;
+    padding: 8px 20px !important;
+}
+
+.members {
+    display: none;
+}
+
+.team:hover .members {
+    display: block;
+    position: absolute;
+    background-color: rgba(9, 30, 62, .7);
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.members a {
+    padding: 0% !important;
+    width: 45px;
+    height: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 750px) {
     .caro {
         position: relative;
@@ -264,5 +357,23 @@ small {
         position: sticky;
         top: -3px;
         z-index: 10;
+    }
+
+    .full {
+        position: relative;
+    }
+
+    .one {
+        position: relative;
+        height: 450px;
+        z-index: 3;
+    }
+
+    .two {
+        position: absolute;
+        z-index: 2;
+        background-color: black;
+        right: 0%;
+        bottom: 0%;
     }
 }
