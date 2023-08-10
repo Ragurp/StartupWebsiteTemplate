@@ -300,7 +300,7 @@ img {
     display: none;
 }
 
-.team:hover .members {
+.team:hover .members{
     display: block;
     position: absolute;
     background-color: rgba(9, 30, 62, .7);
@@ -313,17 +313,47 @@ img {
     align-items: center;
     z-index: 1;
 }
+/* 
+.members a{
+
+
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example4{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 
 .members a {
     padding: 0% !important;
     width: 45px;
     height: 45px;
-}
+} */
 
 a {
     text-decoration: none;
 }
-
+/* ........................... */
+.inner-item{
+    height: 250px;
+    max-width: 450px;
+    margin: auto;
+    border: 1px solid;
+    /* box-shadow: 1px 1px 15px 1px; */
+    color: #000;
+}
+.inner-item h4{
+    color: rgb(6, 163, 218) !important;
+    font-weight: 700;
+}
+/* ..................... */
 @media screen and (min-width: 750px) {
     .caro {
         position: relative;
@@ -376,4 +406,36 @@ a {
         right: 0%;
         bottom: 0%;
     }
+}
+
+
+.vendor {
+  display: flex;
+  height: 250px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+.vendor img{
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-direction: alternate;  
+  animation-delay: 5s;
+  left: 5px;
+  width: 150px;
+}
+
+@keyframes example {
+
+  0%{
+    left: 0px;
+  }
+  100%{
+    left: -150px;
+  }
+  
 }
