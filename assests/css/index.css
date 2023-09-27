@@ -87,13 +87,13 @@ body {
     width: 6px;
     height: 6px;
     background-color: white;
-    animation-name: example;
+    animation-name: example99;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
 
-@keyframes example {
+@keyframes example99 {
     0% {
         left: 0px
     }
